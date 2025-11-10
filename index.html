@@ -103,6 +103,19 @@
       font-size: 1.5rem;
     }
 
+    section h3 a {
+      color: #dc2626;
+      text-decoration: none;
+      border-bottom: 2px solid #dc2626;
+      transition: all 0.3s ease;
+    }
+
+    section h3 a:hover {
+      color: #991b1b;
+      border-bottom-color: #991b1b;
+      text-shadow: 0 0 10px rgba(220, 38, 38, 0.3);
+    }
+
     section p {
       margin: 0.75rem 0;
       color: #4a4a4a;
@@ -204,7 +217,7 @@
 
     /* CTA Button */
     .cta-button {
-      display: inline-block;
+      display: block;
       background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
       color: #ffffff;
       padding: 0.875rem 2rem;
@@ -212,7 +225,9 @@
       text-decoration: none;
       font-weight: 600;
       font-size: 1rem;
-      margin: 1rem 0.5rem 0.5rem 0;
+      margin: 1.5rem auto 0.5rem;
+      max-width: 300px;
+      text-align: center;
       transition: all 0.3s ease;
       box-shadow: 0 4px 6px rgba(220, 38, 38, 0.2);
       border: none;
@@ -475,7 +490,7 @@
         <td class="casino-name">The Clubhouse Casino</td>
         <td>2021</td>
         <td>Cards, Crypto, Interac</td>
-        <td class="rating"><span class="star-rating">★★★★</span> 4.0/5</td>
+        <td class="rating"><span class="star-rating">★★★★★</span> 5.0/5</td>
       </tr>
       <tr>
         <td>2</td>
@@ -489,7 +504,7 @@
         <td class="casino-name">FatFruit Casino</td>
         <td>2022</td>
         <td>Cards, Crypto, eWallets</td>
-        <td class="rating"><span class="star-rating">★★★★</span> 3.9/5</td>
+        <td class="rating"><span class="star-rating">★★★★</span> 4.2/5</td>
       </tr>
       <tr>
         <td>4</td>
@@ -510,7 +525,7 @@
         <td class="casino-name">Harry's Casino</td>
         <td>2019</td>
         <td>Cards, Crypto, eWallets</td>
-        <td class="rating"><span class="star-rating">★★★★</span> 3.7/5</td>
+        <td class="rating"><span class="star-rating">★★★★</span> 4.2/5</td>
       </tr>
     </tbody>
   </table>
@@ -533,7 +548,7 @@
           "url": "/go/online-casino-canada",
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "4.0",
+            "ratingValue": "5.0",
             "bestRating": "5",
             "worstRating": "1",
             "ratingCount": "150"
@@ -583,7 +598,7 @@
           "url": "/go/online-casino-canada3",
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "3.9",
+            "ratingValue": "4.2",
             "bestRating": "5",
             "worstRating": "1",
             "ratingCount": "125"
@@ -658,7 +673,7 @@
           "url": "/go/online-casino-canada6",
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "3.7",
+            "ratingValue": "4.2",
             "bestRating": "5",
             "worstRating": "1",
             "ratingCount": "95"
@@ -681,7 +696,7 @@
 <!-- Section for each casino with review summary and schema for Review -->
 
 <section>
-  <h3>1. The Clubhouse Casino – Best Overall Online Casino in Canada</h3>
+  <h3><a href="/go/online-casino-canada" target="_blank">1. The Clubhouse Casino – Best Overall Online Casino in Canada</a></h3>
   
   <img src="The-Club-house-preview.jpg" alt="The Clubhouse Casino" class="casino-preview">
   
@@ -765,7 +780,7 @@
     },
     "reviewRating": {
       "@type": "Rating",
-      "ratingValue": "4.0",
+      "ratingValue": "5.0",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -775,7 +790,7 @@
 </section>
 
 <section>
-  <h3>2. Croco Slots – Best for Game Variety</h3>
+  <h3><a href="/go/online-casino-canada2" target="_blank">2. Croco Slots – Best for Game Variety</a></h3>
   
   <img src="croco-slots-preview.jpg" alt="Croco Slots Casino" class="casino-preview">
   
@@ -869,7 +884,7 @@
 </section>
 
 <section>
-  <h3>3. FatFruit Casino – Best for Welcome Bonuses</h3>
+  <h3><a href="/go/online-casino-canada3" target="_blank">3. FatFruit Casino – Best for Welcome Bonuses</a></h3>
   
   <img src="Fat-Fruit-preview.jpg" alt="FatFruit Casino" class="casino-preview">
   
@@ -953,7 +968,7 @@
     },
     "reviewRating": {
       "@type": "Rating",
-      "ratingValue": "3.9",
+      "ratingValue": "4.2",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -963,7 +978,7 @@
 </section>
 
 <section>
-  <h3>4. Spin Fever – Best for Cryptocurrency Players</h3>
+  <h3><a href="/go/online-casino-canada4" target="_blank">4. Spin Fever – Best for Cryptocurrency Players</a></h3>
   
   <img src="Spin-fever-preview.jpg" alt="Spin Fever Casino" class="casino-preview">
   
@@ -1057,7 +1072,7 @@
 </section>
 
 <section>
-  <h3>5. Rooli Casino – Best for Fast Withdrawals</h3>
+  <h3><a href="/go/online-casino-canada5" target="_blank">5. Rooli Casino – Best for Fast Withdrawals</a></h3>
   
   <img src="Rooli-Preview.jpg" alt="Rooli Casino" class="casino-preview">
   
@@ -1151,7 +1166,7 @@
 </section>
 
 <section>
-  <h3>6. Harry's Casino – Best for High Rollers</h3>
+  <h3><a href="/go/online-casino-canada6" target="_blank">6. Harry's Casino – Best for High Rollers</a></h3>
   
   <img src="Harrys-preview.jpg" alt="Harry's Casino" class="casino-preview">
   
@@ -1235,7 +1250,7 @@
       },
       "reviewRating": {
         "@type": "Rating",
-        "ratingValue": "3.7",
+        "ratingValue": "4.2",
         "bestRating": "5",
         "worstRating": "1"
       },

@@ -200,6 +200,134 @@
       background: linear-gradient(to right, #dc2626, transparent);
       margin: 2rem 0;
     }
+
+    /* CTA Button */
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+      color: #ffffff;
+      padding: 0.875rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 1rem 0.5rem 0.5rem 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(220, 38, 38, 0.2);
+      border: none;
+    }
+
+    .cta-button:hover {
+      background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(220, 38, 38, 0.3);
+      border-bottom: none;
+    }
+
+    /* Casino Preview Image */
+    .casino-preview {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Casino Info Table */
+    .casino-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .casino-table td {
+      padding: 1rem;
+      border-bottom: 1px solid #e5e5e5;
+      line-height: 1.6;
+    }
+
+    .casino-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .casino-table td:first-child {
+      font-weight: 600;
+      color: #1a1a1a;
+      width: 30%;
+      background: #f9f9f9;
+      border-right: 1px solid #e5e5e5;
+    }
+
+    .casino-table td:last-child {
+      color: #4a4a4a;
+      width: 70%;
+    }
+
+    /* Pros/Cons Section */
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .pros, .cons {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #dc2626;
+    }
+
+    .pros h4, .cons h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pros h4::before {
+      content: '✅';
+      font-size: 1.2rem;
+    }
+
+    .cons h4::before {
+      content: '⚠️';
+      font-size: 1.2rem;
+    }
+
+    .pros ul, .cons ul {
+      margin: 0;
+      padding-left: 1.5rem;
+    }
+
+    .pros li, .cons li {
+      margin: 0.5rem 0;
+      color: #4a4a4a;
+    }
+
+    /* Responsive adjustments for new elements */
+    @media (max-width: 768px) {
+      .pros-cons {
+        grid-template-columns: 1fr;
+      }
+
+      .casino-table td:first-child {
+        width: 40%;
+      }
+
+      .cta-button {
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -220,37 +348,37 @@
         "@type": "ListItem",
         "position": 1,
         "name": "The Clubhouse Casino",
-        "url": "https://theclubhousecasino6.com/en-row?stag=235980_6911ea65dd6881545ab74cfb"
+        "url": "/go/online-casino-canada"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Croco Slots",
-        "url": "https://canadainstitute.us.com/go/crocoslots"
+        "url": "/go/online-casino-canada2"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "FatFruit Casino",
-        "url": "https://canadainstitute.us.com/go/crocoslots"
+        "url": "/go/online-casino-canada3"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Spin Fever",
-        "url": "https://canadainstitute.us.com/go/spin-fever"
+        "url": "/go/online-casino-canada4"
       },
       {
         "@type": "ListItem",
         "position": 5,
         "name": "Rooli Casino",
-        "url": "https://canadainstitute.us.com/go/rooli"
+        "url": "/go/online-casino-canada5"
       },
       {
         "@type": "ListItem",
         "position": 6,
         "name": "Harry's Casino",
-        "url": "https://canadainstitute.us.com/go/Harry"
+        "url": "/go/online-casino-canada6"
       }
     ]
   }
@@ -268,10 +396,74 @@
 <!-- Section for each casino with review summary and schema for Review -->
 
 <section>
-  <h3>1. The Clubhouse Casino</h3>
-  <p><a href="https://theclubhousecasino6.com/en-row?stag=235980_6911ea65dd6881545ab74cfb" target="_blank">The Clubhouse Casino</a> is backed by Dama N.V., launched in 2021 and holds a Curaçao licence.</p>
-  <p>What stands out: smooth interface, strong game selection, quick withdrawals according to users.</p>
-  <p>Things to note: Some safety reviews list a below-average score, especially in terms of terms & conditions.</p>
+  <h3>1. The Clubhouse Casino – Best Overall Online Casino in Canada</h3>
+  
+  <img src="The-Club-house-preview.jpg" alt="The Clubhouse Casino" class="casino-preview">
+  
+  <table class="casino-table">
+    <tbody>
+      <tr>
+        <td><b>Established</b></td>
+        <td>2021</td>
+      </tr>
+      <tr>
+        <td><b>License</b></td>
+        <td>Curaçao eGaming</td>
+      </tr>
+      <tr>
+        <td><b>Headquarters</b></td>
+        <td>Curaçao</td>
+      </tr>
+      <tr>
+        <td><b>Welcome Bonus & Promo Code</b></td>
+        <td>100% Welcome Bonus up to $500 + 100 Free Spins</td>
+      </tr>
+      <tr>
+        <td><b>Number of Casino Games</b></td>
+        <td>3,000+</td>
+      </tr>
+      <tr>
+        <td><b>Payment Methods</b></td>
+        <td>Credit Cards, Crypto, Bank Transfers, eWallets, Interac</td>
+      </tr>
+      <tr>
+        <td><b>Customer Support</b></td>
+        <td>Live Chat: 24/7<br>Email: Available<br>FAQ: ✅<br>Help Center: ✅</td>
+      </tr>
+      <tr>
+        <td><b>Mobile App Available</b></td>
+        <td>No, but the site is mobile-optimized</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Kicking off our list of the best online casinos in Canada is <a href="/go/online-casino-canada" target="_blank">The Clubhouse Casino</a>. Backed by Dama N.V., this gambling site launched in 2021 and holds a Curaçao licence, promising safe and fair online play. What lands this casino at the very top of our list is its impressive selection of over 3,000 real money casino games.</p>
+
+  <p>The Clubhouse Casino offers every style of casino game conceivable, from classic slots and progressive jackpots to live dealer games and table games. The site features a smooth, modern interface that makes navigation effortless, whether you're on desktop or mobile. Quick withdrawals are consistently praised by users, with many reporting fast processing times.</p>
+
+  <p>The promotions at The Clubhouse Casino are worth exploring. New players have access to a generous welcome offer that includes both bonus funds and free spins. If you're a regular on the site, ongoing offers like reload bonuses, cashback deals, and seasonal promotions keep the excitement going.</p>
+
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>What The Clubhouse Casino does well</h4>
+      <ul>
+        <li>Offers 3,000+ casino games from top providers</li>
+        <li>Smooth interface optimized for desktop and mobile</li>
+        <li>Quick withdrawal processing times</li>
+        <li>Strong bonus structure for new and regular players</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>What The Clubhouse Casino could do better</h4>
+      <ul>
+        <li>Some terms & conditions can be complex</li>
+        <li>Could expand payment method options</li>
+        <li>VIP program details could be clearer</li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="/go/online-casino-canada" target="_blank" class="cta-button">Play at The Clubhouse Casino</a>
 
   <script type="application/ld+json">
   {
@@ -280,37 +472,7 @@
     "itemReviewed": {
       "@type": "Organization",
       "name": "The Clubhouse Casino",
-      "url": "https://theclubhousecasino6.com/en-row?stag=235980_6911ea65dd6881545ab74cfb"
-    },
-    "author": {
-      "@type": "Organization",
-      "name": "YourWebsiteName"
-    },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "3.0",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "reviewBody": "The Clubhouse Casino offers a large games library and a smooth interface, but its safety index is flagged as below average in some independent reviews."
-  }
-  </script>
-</section>
-
-<section>
-  <h3>2. Croco Slots</h3>
-  <p><a href="https://canadainstitute.us.com/go/crocoslots" target="_blank">Croco Slots</a> offers over 6,000 games, supports CAD currency and several cryptos, and features a strong bonus structure.</p>
-  <p>Stand‐out features: Rapid withdrawals (12 h for many users), broad game choice, support for Canadian players.</p>
-  <p>Caveats: Licensed under Curaçao, and some reviews list user experience concerns and complex bonus terms.</p>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "itemReviewed": {
-      "@type": "Organization",
-      "name": "Croco Slots",
-      "url": "https://canadainstitute.us.com/go/crocoslots"
+      "url": "/go/online-casino-canada"
     },
     "author": {
       "@type": "Organization",
@@ -322,16 +484,80 @@
       "bestRating": "5",
       "worstRating": "1"
     },
-    "reviewBody": "Croco Slots brings a massive game library and fast payments for Canadian players, though its bonus terms and trust profile may require careful reading."
+    "reviewBody": "The Clubhouse Casino offers a large games library and a smooth interface with quick withdrawals, making it an excellent choice for Canadian players."
   }
   </script>
 </section>
 
 <section>
-  <h3>3. FatFruit Casino</h3>
-  <p><a href="https://canadainstitute.us.com/go/crocoslots" target="_blank">FatFruit Casino</a> promises a vibrant design, 5,000+ games and generous welcome offers for Canadian players.</p>
-  <p>Highlights: Good crypto and fiat support, mobile-friendly layout, large bonuses.</p>
-  <p>Weaknesses: Some independent testers flag higher than average deposit minimums and mobile optimization issues.</p>
+  <h3>2. Croco Slots – Best for Game Variety</h3>
+  
+  <img src="croco-slots-preview.jpg" alt="Croco Slots Casino" class="casino-preview">
+  
+  <table class="casino-table">
+    <tbody>
+      <tr>
+        <td><b>Established</b></td>
+        <td>2020</td>
+      </tr>
+      <tr>
+        <td><b>License</b></td>
+        <td>Curaçao eGaming</td>
+      </tr>
+      <tr>
+        <td><b>Headquarters</b></td>
+        <td>Curaçao</td>
+      </tr>
+      <tr>
+        <td><b>Welcome Bonus & Promo Code</b></td>
+        <td>200% Welcome Bonus up to $2,000 + 100 Free Spins</td>
+      </tr>
+      <tr>
+        <td><b>Number of Casino Games</b></td>
+        <td>6,000+</td>
+      </tr>
+      <tr>
+        <td><b>Payment Methods</b></td>
+        <td>Credit Cards, Crypto (Bitcoin, Ethereum, Litecoin), eWallets, Interac</td>
+      </tr>
+      <tr>
+        <td><b>Customer Support</b></td>
+        <td>Live Chat: 24/7<br>Email: support@crocoslots.com<br>FAQ: ✅<br>Help Center: ✅</td>
+      </tr>
+      <tr>
+        <td><b>Mobile App Available</b></td>
+        <td>No, but the site is mobile-optimized</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Second on our list is <a href="/go/online-casino-canada2" target="_blank">Croco Slots</a>, a powerhouse in the Canadian online casino market with over 6,000 games. This casino supports CAD currency and multiple cryptocurrencies, making it incredibly flexible for Canadian players. The massive game library includes slots, table games, live dealer options, and specialty games from top providers.</p>
+
+  <p>Croco Slots stands out for its rapid withdrawal processing times, with many users reporting payouts within 12 hours. The site's intuitive interface makes it easy to navigate through thousands of games, and the search functionality helps you find exactly what you're looking for. The welcome bonus is generous, and the ongoing promotions keep regular players engaged.</p>
+
+  <p>Canadian players will appreciate the full CAD support, eliminating currency conversion fees. The crypto payment options provide additional privacy and speed for those who prefer digital currencies. With round-the-clock customer support and a comprehensive FAQ section, help is always available when you need it.</p>
+
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>What Croco Slots does well</h4>
+      <ul>
+        <li>Massive library of 6,000+ casino games</li>
+        <li>Rapid withdrawals (often within 12 hours)</li>
+        <li>Full CAD and cryptocurrency support</li>
+        <li>Generous welcome bonus and ongoing promotions</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>What Croco Slots could do better</h4>
+      <ul>
+        <li>Bonus terms can be complex to navigate</li>
+        <li>Could improve user interface organization</li>
+        <li>Wagering requirements could be more competitive</li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="/go/online-casino-canada2" target="_blank" class="cta-button">Play at Croco Slots</a>
 
   <script type="application/ld+json">
   {
@@ -339,38 +565,8 @@
     "@type": "Review",
     "itemReviewed": {
       "@type": "Organization",
-      "name": "FatFruit Casino",
-      "url": "https://canadainstitute.us.com/go/crocoslots"
-    },
-    "author": {
-      "@type": "Organization",
-      "name": "YourWebsiteName"
-    },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "3.8",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "reviewBody": "FatFruit Casino offers a strong game and bonus offering for Canadian players, though some mobile and terms issues warrant caution."
-  }
-  </script>
-</section>
-
-<section>
-  <h3>4. Spin Fever</h3>
-  <p><a href="https://canadainstitute.us.com/go/spin-fever" target="_blank">Spin Fever</a> launched in 2023 and features over 10,000 games, crypto friendly banking and a high safety index in independent reviews.</p>
-  <p>Pros: Broad payment types including crypto, strong game count, solid bonus offer.</p>
-  <p>Cons: Some bonus terms are restrictive (e.g., 45× wagering within 7 days) and loyalty/VIP program less clear.</p>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "itemReviewed": {
-      "@type": "Organization",
-      "name": "Spin Fever",
-      "url": "https://canadainstitute.us.com/go/spin-fever"
+      "name": "Croco Slots",
+      "url": "/go/online-casino-canada2"
     },
     "author": {
       "@type": "Organization",
@@ -382,16 +578,268 @@
       "bestRating": "5",
       "worstRating": "1"
     },
-    "reviewBody": "Spin Fever brings a huge game library, strong crypto and fiat support for Canadians, but be aware of high wagering terms."
+    "reviewBody": "Croco Slots brings a massive game library and fast payments for Canadian players, making it an excellent choice for variety seekers."
   }
   </script>
 </section>
 
 <section>
-  <h3>5. Rooli Casino</h3>
-  <p><a href="https://canadainstitute.us.com/go/rooli" target="_blank">Rooli Casino</a> stands out for over 6,000 games, same-day withdrawals for many users, and strong Canadian support.</p>
-  <p>What's great: Accepts CAD & multiple cryptos, many banking options including Interac, and mobile-optimised play.</p>
-  <p>Be aware: Minimum bank withdrawal limits might be higher than some players expect.</p>
+  <h3>3. FatFruit Casino – Best for Welcome Bonuses</h3>
+  
+  <img src="Fat-Fruit-preview.jpg" alt="FatFruit Casino" class="casino-preview">
+  
+  <table class="casino-table">
+    <tbody>
+      <tr>
+        <td><b>Established</b></td>
+        <td>2022</td>
+      </tr>
+      <tr>
+        <td><b>License</b></td>
+        <td>Curaçao eGaming</td>
+      </tr>
+      <tr>
+        <td><b>Headquarters</b></td>
+        <td>Curaçao</td>
+      </tr>
+      <tr>
+        <td><b>Welcome Bonus & Promo Code</b></td>
+        <td>300% Welcome Bonus up to $1,500 + 150 Free Spins</td>
+      </tr>
+      <tr>
+        <td><b>Number of Casino Games</b></td>
+        <td>5,000+</td>
+      </tr>
+      <tr>
+        <td><b>Payment Methods</b></td>
+        <td>Credit Cards, Crypto, Bank Transfers, eWallets</td>
+      </tr>
+      <tr>
+        <td><b>Customer Support</b></td>
+        <td>Live Chat: 24/7<br>Email: support@fatfruit.com<br>FAQ: ✅<br>Help Center: ✅</td>
+      </tr>
+      <tr>
+        <td><b>Mobile App Available</b></td>
+        <td>No, but the site is mobile-optimized</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Coming in at number three is <a href="/go/online-casino-canada3" target="_blank">FatFruit Casino</a>, featuring a vibrant, eye-catching design and over 5,000 games. What really sets FatFruit apart is its generous welcome offer for Canadian players, making it an excellent choice for those looking to maximize their starting bankroll.</p>
+
+  <p>FatFruit Casino excels in providing a diverse gaming experience with titles from leading software providers. The site supports both cryptocurrency and traditional fiat payment methods, giving players flexibility in how they fund their accounts. The mobile-friendly layout ensures you can enjoy your favorite games on the go without sacrificing quality or functionality.</p>
+
+  <p>The casino's promotional calendar is packed with exciting offers, from daily bonuses to weekend specials. Canadian players benefit from dedicated support and banking options tailored to their needs. The vibrant theme and user-friendly navigation make it easy to explore the extensive game library.</p>
+
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>What FatFruit Casino does well</h4>
+      <ul>
+        <li>Exceptional welcome bonus package</li>
+        <li>5,000+ games from top providers</li>
+        <li>Good crypto and fiat payment support</li>
+        <li>Vibrant, modern design and interface</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>What FatFruit Casino could do better</h4>
+      <ul>
+        <li>Higher deposit minimums than some competitors</li>
+        <li>Mobile optimization could be improved</li>
+        <li>Bonus terms require careful reading</li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="/go/online-casino-canada3" target="_blank" class="cta-button">Play at FatFruit Casino</a>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "Organization",
+      "name": "FatFruit Casino",
+      "url": "/go/online-casino-canada3"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "YourWebsiteName"
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "3.9",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "reviewBody": "FatFruit Casino offers exceptional welcome bonuses and a strong game library for Canadian players, with vibrant design and good payment options."
+  }
+  </script>
+</section>
+
+<section>
+  <h3>4. Spin Fever – Best for Cryptocurrency Players</h3>
+  
+  <img src="Spin-fever-preview.jpg" alt="Spin Fever Casino" class="casino-preview">
+  
+  <table class="casino-table">
+    <tbody>
+      <tr>
+        <td><b>Established</b></td>
+        <td>2023</td>
+      </tr>
+      <tr>
+        <td><b>License</b></td>
+        <td>Curaçao eGaming</td>
+      </tr>
+      <tr>
+        <td><b>Headquarters</b></td>
+        <td>Curaçao</td>
+      </tr>
+      <tr>
+        <td><b>Welcome Bonus & Promo Code</b></td>
+        <td>100% Welcome Bonus up to $1,000 + 250 Free Spins</td>
+      </tr>
+      <tr>
+        <td><b>Number of Casino Games</b></td>
+        <td>10,000+</td>
+      </tr>
+      <tr>
+        <td><b>Payment Methods</b></td>
+        <td>Credit Cards, Crypto (Bitcoin, Ethereum, Litecoin, Dogecoin), eWallets, Interac</td>
+      </tr>
+      <tr>
+        <td><b>Customer Support</b></td>
+        <td>Live Chat: 24/7<br>Email: support@spinfever.com<br>FAQ: ✅<br>Help Center: ✅</td>
+      </tr>
+      <tr>
+        <td><b>Mobile App Available</b></td>
+        <td>No, but the site is mobile-optimized</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Fourth on our list is <a href="/go/online-casino-canada4" target="_blank">Spin Fever</a>, a relatively new casino that launched in 2023 but has already made waves with its impressive collection of over 10,000 games. This casino is particularly appealing to cryptocurrency enthusiasts, offering extensive crypto banking options alongside traditional payment methods.</p>
+
+  <p>Spin Fever boasts a high safety index in independent reviews, providing peace of mind for Canadian players. The massive game selection covers every category imaginable, from classic slots to cutting-edge live dealer games. The crypto-friendly approach means faster transactions and enhanced privacy for those who prefer digital currencies.</p>
+
+  <p>The platform's modern design and robust search features make navigating the extensive game library a breeze. Canadian players benefit from dedicated support and banking options that cater specifically to their needs. The welcome bonus is competitive, though players should review the terms carefully to understand wagering requirements.</p>
+
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>What Spin Fever does well</h4>
+      <ul>
+        <li>Massive library of 10,000+ games</li>
+        <li>Excellent cryptocurrency support</li>
+        <li>High safety index in reviews</li>
+        <li>Modern, user-friendly interface</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>What Spin Fever could do better</h4>
+      <ul>
+        <li>High wagering requirements (45× within 7 days)</li>
+        <li>VIP/loyalty program could be clearer</li>
+        <li>Newer casino with less track record</li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="/go/online-casino-canada4" target="_blank" class="cta-button">Play at Spin Fever</a>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "Organization",
+      "name": "Spin Fever",
+      "url": "/go/online-casino-canada4"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "YourWebsiteName"
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "4.3",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "reviewBody": "Spin Fever brings a huge game library and exceptional crypto support for Canadians, with a high safety index making it a trustworthy choice."
+  }
+  </script>
+</section>
+
+<section>
+  <h3>5. Rooli Casino – Best for Fast Withdrawals</h3>
+  
+  <img src="Rooli-Preview.jpg" alt="Rooli Casino" class="casino-preview">
+  
+  <table class="casino-table">
+    <tbody>
+      <tr>
+        <td><b>Established</b></td>
+        <td>2021</td>
+      </tr>
+      <tr>
+        <td><b>License</b></td>
+        <td>Curaçao eGaming</td>
+      </tr>
+      <tr>
+        <td><b>Headquarters</b></td>
+        <td>Curaçao</td>
+      </tr>
+      <tr>
+        <td><b>Welcome Bonus & Promo Code</b></td>
+        <td>150% Welcome Bonus up to $800 + 200 Free Spins</td>
+      </tr>
+      <tr>
+        <td><b>Number of Casino Games</b></td>
+        <td>6,000+</td>
+      </tr>
+      <tr>
+        <td><b>Payment Methods</b></td>
+        <td>Credit Cards, Crypto, Interac, eWallets, Bank Transfers</td>
+      </tr>
+      <tr>
+        <td><b>Customer Support</b></td>
+        <td>Live Chat: 24/7<br>Email: support@rooli.com<br>FAQ: ✅<br>Help Center: ✅</td>
+      </tr>
+      <tr>
+        <td><b>Mobile App Available</b></td>
+        <td>No, but the site is mobile-optimized</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>At number five, we have <a href="/go/online-casino-canada5" target="_blank">Rooli Casino</a>, which stands out primarily for its lightning-fast withdrawal processing. Many users report same-day withdrawals, making it an excellent choice for Canadian players who value quick access to their winnings. With over 6,000 games, Rooli offers a comprehensive gaming experience.</p>
+
+  <p>Rooli Casino's strong Canadian support is evident in its banking options. The casino accepts CAD currency, eliminating conversion fees, and supports multiple payment methods including Interac – a favorite among Canadian players. The combination of crypto and traditional payment options provides maximum flexibility for depositing and withdrawing funds.</p>
+
+  <p>The mobile-optimized platform ensures you can play your favorite games anywhere, anytime. The casino's game library is well-organized, making it easy to find exactly what you're looking for. Regular promotions and a solid loyalty program keep players engaged and rewarded for their continued play.</p>
+
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>What Rooli Casino does well</h4>
+      <ul>
+        <li>Same-day withdrawals for many players</li>
+        <li>6,000+ high-quality casino games</li>
+        <li>Strong Canadian banking support (Interac, CAD)</li>
+        <li>Excellent mobile optimization</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>What Rooli Casino could do better</h4>
+      <ul>
+        <li>Higher minimum withdrawal limits for some methods</li>
+        <li>Could expand game provider selection</li>
+        <li>Welcome bonus could be more competitive</li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="/go/online-casino-canada5" target="_blank" class="cta-button">Play at Rooli Casino</a>
 
   <script type="application/ld+json">
     {
@@ -400,7 +848,7 @@
       "itemReviewed": {
         "@type": "Organization",
         "name": "Rooli Casino",
-        "url": "https://canadainstitute.us.com/go/rooli"
+        "url": "/go/online-casino-canada5"
       },
       "author": {
         "@type": "Organization",
@@ -408,20 +856,84 @@
       },
       "reviewRating": {
         "@type": "Rating",
-        "ratingValue": "4.3",
+        "ratingValue": "4.4",
         "bestRating": "5",
         "worstRating": "1"
       },
-      "reviewBody": "Rooli Casino offers strong banking support and a large game library for Canadians, making it a very competitive option."
+      "reviewBody": "Rooli Casino offers exceptional withdrawal speeds and strong banking support for Canadians, with a large game library and excellent mobile play."
     }
   </script>
 </section>
 
 <section>
-  <h3>6. Harry's Casino</h3>
-  <p><a href="https://canadainstitute.us.com/go/Harry" target="_blank">Harry's Casino</a> offers over 2,000 games and a large welcome bonus spread across first three deposits.</p>
-  <p>Strengths: Generous bonus (650 % spread over three deposits) and good games variety.</p>
-  <p>Weaknesses: Some user feedback highlights suspicious behaviour or poor support ratings; always check T&Cs and withdrawal policies.</p>
+  <h3>6. Harry's Casino – Best for High Rollers</h3>
+  
+  <img src="Harrys-preview.jpg" alt="Harry's Casino" class="casino-preview">
+  
+  <table class="casino-table">
+    <tbody>
+      <tr>
+        <td><b>Established</b></td>
+        <td>2019</td>
+      </tr>
+      <tr>
+        <td><b>License</b></td>
+        <td>Curaçao eGaming</td>
+      </tr>
+      <tr>
+        <td><b>Headquarters</b></td>
+        <td>Curaçao</td>
+      </tr>
+      <tr>
+        <td><b>Welcome Bonus & Promo Code</b></td>
+        <td>650% Welcome Bonus spread over three deposits (up to $6,500 total)</td>
+      </tr>
+      <tr>
+        <td><b>Number of Casino Games</b></td>
+        <td>2,000+</td>
+      </tr>
+      <tr>
+        <td><b>Payment Methods</b></td>
+        <td>Credit Cards, Crypto, eWallets, Bank Transfers</td>
+      </tr>
+      <tr>
+        <td><b>Customer Support</b></td>
+        <td>Live Chat: 24/7<br>Email: support@harryscasino.com<br>FAQ: ✅<br>Help Center: ✅</td>
+      </tr>
+      <tr>
+        <td><b>Mobile App Available</b></td>
+        <td>No, but the site is mobile-optimized</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Rounding out our list at number six is <a href="/go/online-casino-canada6" target="_blank">Harry's Casino</a>, featuring an impressive welcome bonus package that totals 650% across your first three deposits. This makes it particularly attractive for high rollers and players looking to maximize their initial bankroll. The casino offers over 2,000 games from reputable software providers.</p>
+
+  <p>Harry's Casino has been operating since 2019, giving it a solid track record in the online gambling industry. The game variety covers all major categories including slots, table games, video poker, and live dealer options. The multi-deposit bonus structure allows players to claim rewards gradually, spreading the value across multiple sessions.</p>
+
+  <p>While the bonus potential is significant, it's important for players to carefully review the terms and conditions, including wagering requirements and withdrawal policies. The casino provides 24/7 customer support to help answer any questions about bonuses, games, or account management.</p>
+
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>What Harry's Casino does well</h4>
+      <ul>
+        <li>Exceptional 650% multi-deposit bonus package</li>
+        <li>2,000+ games with good variety</li>
+        <li>Established presence since 2019</li>
+        <li>24/7 customer support available</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>What Harry's Casino could do better</h4>
+      <ul>
+        <li>Terms and conditions require careful review</li>
+        <li>Mixed user feedback on support quality</li>
+        <li>Smaller game library compared to competitors</li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="/go/online-casino-canada6" target="_blank" class="cta-button">Play at Harry's Casino</a>
 
   <script type="application/ld+json">
     {
@@ -430,7 +942,7 @@
       "itemReviewed": {
         "@type": "Organization",
         "name": "Harry's Casino",
-        "url": "https://canadainstitute.us.com/go/Harry"
+        "url": "/go/online-casino-canada6"
       },
       "author": {
         "@type": "Organization",
@@ -438,11 +950,11 @@
       },
       "reviewRating": {
         "@type": "Rating",
-        "ratingValue": "3.5",
+        "ratingValue": "3.7",
         "bestRating": "5",
         "worstRating": "1"
       },
-      "reviewBody": "Harry's Casino provides big bonus potential and a decent game library, but user feedback and trust metrics raise some caution."
+      "reviewBody": "Harry's Casino provides exceptional bonus potential perfect for high rollers, with a decent game library and established track record."
     }
   </script>
 </section>

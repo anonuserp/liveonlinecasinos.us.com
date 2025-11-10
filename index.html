@@ -54,10 +54,11 @@
     h2 {
       font-size: 2rem;
       color: #1a1a1a;
-      margin: 3rem 0 1.5rem;
+      margin: 3rem auto 1.5rem;
       padding-bottom: 0.5rem;
       border-bottom: 3px solid #dc2626;
-      display: inline-block;
+      display: block;
+      text-align: center;
     }
 
     /* Casino Cards */
@@ -230,7 +231,8 @@
       max-width: 600px;
       height: auto;
       border-radius: 8px;
-      margin: 1.5rem 0;
+      margin: 1.5rem auto;
+      display: block;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
@@ -312,6 +314,60 @@
       color: #4a4a4a;
     }
 
+    /* Ranking Table */
+    .ranking-table {
+      width: 100%;
+      max-width: 900px;
+      margin: 2rem auto;
+      border-collapse: collapse;
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .ranking-table thead {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      color: #ffffff;
+    }
+
+    .ranking-table th {
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 2px solid #dc2626;
+    }
+
+    .ranking-table td {
+      padding: 1rem;
+      border-bottom: 1px solid #e5e5e5;
+      color: #4a4a4a;
+    }
+
+    .ranking-table tbody tr:hover {
+      background: #f9f9f9;
+    }
+
+    .ranking-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .ranking-table .casino-name {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .ranking-table .rating {
+      color: #dc2626;
+      font-weight: 600;
+    }
+
+    .star-rating {
+      color: #fbbf24;
+      letter-spacing: 2px;
+    }
+
     /* Responsive adjustments for new elements */
     @media (max-width: 768px) {
       .pros-cons {
@@ -326,6 +382,15 @@
         display: block;
         text-align: center;
         margin: 1rem 0;
+      }
+
+      .ranking-table {
+        font-size: 0.9rem;
+      }
+
+      .ranking-table th,
+      .ranking-table td {
+        padding: 0.75rem 0.5rem;
       }
     }
   </style>
@@ -392,6 +457,226 @@
 
 <div class="container">
   <h2>Top Canadian Online Casinos This Year</h2>
+
+  <!-- Casino Ranking Table with Schema -->
+  <table class="ranking-table">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Casino Name</th>
+        <th>Established</th>
+        <th>Payment Methods</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td class="casino-name">The Clubhouse Casino</td>
+        <td>2021</td>
+        <td>Cards, Crypto, Interac</td>
+        <td class="rating"><span class="star-rating">★★★★</span> 4.0/5</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td class="casino-name">Croco Slots</td>
+        <td>2020</td>
+        <td>Cards, Crypto, Interac</td>
+        <td class="rating"><span class="star-rating">★★★★</span> 4.2/5</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td class="casino-name">FatFruit Casino</td>
+        <td>2022</td>
+        <td>Cards, Crypto, eWallets</td>
+        <td class="rating"><span class="star-rating">★★★★</span> 3.9/5</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td class="casino-name">Spin Fever</td>
+        <td>2023</td>
+        <td>Cards, Crypto, Interac</td>
+        <td class="rating"><span class="star-rating">★★★★</span> 4.3/5</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td class="casino-name">Rooli Casino</td>
+        <td>2021</td>
+        <td>Cards, Crypto, Interac</td>
+        <td class="rating"><span class="star-rating">★★★★</span> 4.4/5</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td class="casino-name">Harry's Casino</td>
+        <td>2019</td>
+        <td>Cards, Crypto, eWallets</td>
+        <td class="rating"><span class="star-rating">★★★★</span> 3.7/5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Enhanced ItemList Schema with AggregateRating and Offers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Best Online Casinos in Canada 2025 - Complete Rankings",
+    "description": "Ranked list of the top 6 online casinos for Canadian players",
+    "numberOfItems": 6,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Organization",
+          "name": "The Clubhouse Casino",
+          "url": "/go/online-casino-canada",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.0",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "150"
+          },
+          "offers": {
+            "@type": "Offer",
+            "description": "100% Welcome Bonus up to $500 + 100 Free Spins",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "500",
+              "priceCurrency": "CAD"
+            }
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Organization",
+          "name": "Croco Slots",
+          "url": "/go/online-casino-canada2",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.2",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "230"
+          },
+          "offers": {
+            "@type": "Offer",
+            "description": "200% Welcome Bonus up to $2,000 + 100 Free Spins",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "2000",
+              "priceCurrency": "CAD"
+            }
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Organization",
+          "name": "FatFruit Casino",
+          "url": "/go/online-casino-canada3",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "125"
+          },
+          "offers": {
+            "@type": "Offer",
+            "description": "300% Welcome Bonus up to $1,500 + 150 Free Spins",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "1500",
+              "priceCurrency": "CAD"
+            }
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Organization",
+          "name": "Spin Fever",
+          "url": "/go/online-casino-canada4",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.3",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "180"
+          },
+          "offers": {
+            "@type": "Offer",
+            "description": "100% Welcome Bonus up to $1,000 + 250 Free Spins",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "1000",
+              "priceCurrency": "CAD"
+            }
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Organization",
+          "name": "Rooli Casino",
+          "url": "/go/online-casino-canada5",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.4",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "210"
+          },
+          "offers": {
+            "@type": "Offer",
+            "description": "150% Welcome Bonus up to $800 + 200 Free Spins",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "800",
+              "priceCurrency": "CAD"
+            }
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Organization",
+          "name": "Harry's Casino",
+          "url": "/go/online-casino-canada6",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.7",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "95"
+          },
+          "offers": {
+            "@type": "Offer",
+            "description": "650% Welcome Bonus spread over three deposits (up to $6,500 total)",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "6500",
+              "priceCurrency": "CAD"
+            }
+          }
+        }
+      }
+    ]
+  }
+  </script>
 
 <!-- Section for each casino with review summary and schema for Review -->
 
